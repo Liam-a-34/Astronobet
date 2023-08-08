@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: linear-gradient(to right top, #141414, #171717, #191919, #1c1c1c, #1e1e1e, #1f1f1f, #1f1f1f, #202020, #1f1f1f, #1e1e1e, #1e1e1e, #1d1d1d);
+    z-index: -5;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(40, 40, 40);
+    position: relative;
+    z-index: 5;
+}
+
+.logo{
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.game-tabs{
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.game-tab a{
+    font-size: 25px;
+    font-family: "Open Sans";
+    color: white
+}
+
+.game-tab a:hover{
+    cursor: pointer;
+}
+
+.header-user-info{
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+.header-user-info h5{
+    color: white;
+    font-family: "Montserrat";
+    font-size: 23px;
+    text-align: right;
+}
+
+.header-user-info p{
+    color: white;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    text-align: right;
+}
+
+.header-user-info img{
+    width: 80px;
+    height: 60px;
+}
+
+.chat-aside{
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgb(40, 40, 40);
+}
+
+.chat-aside textarea{
+    width: 250px;
+    height: 130px;
+    background-color: rgb(48, 48, 48);
+    position: absolute;
+    resize: none;
+    bottom: 15px;
+    left: 15px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 2;
+    outline: none;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
